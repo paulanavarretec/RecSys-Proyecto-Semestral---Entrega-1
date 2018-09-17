@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{endnotes}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{color}
+
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[document]{ragged2e}
+
+
+
+
+
+\definecolor{miverde}{rgb}{0,0.6,0}
+\definecolor{migris}{rgb}{0.5,0.5,0.5}
+\definecolor{mimalva}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % Indica el color de fondo; necesita que se añada \usepackage{color} o \usepackage{xcolor}
+  basicstyle=\footnotesize,        % Fija el tamaño del tipo de letra utilizado para el código
+  breakatwhitespace=false,         % Activarlo para que los saltos automáticos solo se apliquen en los espacios en blanco
+  breaklines=true,                 % Activa el salto de línea automático
+  captionpos=b,                    % Establece la posición de la leyenda del cuadro de código
+  commentstyle=\color{miverde},    % Estilo de los comentarios
+  deletekeywords={...},            % Si se quiere eliminar palabras clave del lenguaje
+  escapeinside={\%*}{*)},          % Si quieres incorporar LaTeX dentro del propio código
+  extendedchars=true,              % Permite utilizar caracteres extendidos no-ASCII; solo funciona para codificaciones de 8-bits; para UTF-8 no funciona. En xelatex necesita estar a true para que funcione.
+  frame=single,	                   % Añade un marco al código
+  keepspaces=true,                 % Mantiene los espacios en el texto. Es útil para mantener la indentación del código(puede necesitar columns=flexible).
+  keywordstyle=\color{blue},       % estilo de las palabras clave
+  language=Pascal,                 % El lenguaje del código
+  otherkeywords={*,...},           % Si se quieren añadir otras palabras clave al lenguaje
+  numbers=none,                    % Posición de los números de línea (none, left, right).
+  numbersep=5pt,                   % Distancia de los números de línea al código
+  numberstyle=\small\color{migris}, % Estilo para los números de línea
+  rulecolor=\color{black},         % Si no se activa, el color del marco puede cambiar en los saltos de línea entre textos que sea de otro color, por ejemplo, los comentarios, que están en verde en este ejemplo
+  showstringspaces=false,          % subraya solamente los espacios que estén en una cadena de esto
+  stepnumber=2,                    % Muestra solamente los números de línea que corresponden a cada salto. En este caso: 1,3,5,...
+  stringstyle=\color{mimalva},     % Estilo de las cadenas de texto
+  tabsize=2,	                   % Establece el salto de las tabulaciones a 2 espacios
+  title=\lstname                   % muestra el nombre de los ficheros incluidos al utilizar \lstinputlisting; también se puede utilizar en el parámetro caption
+}
+
+\title{\LARGE \bf
+IIC 3633 - Recommender Systems\\
+Proyecto - Entrega 1
+}
+
+% \author{ \parbox{3 in}{\centering Huibert Kwakernaak*
+%         \thanks{*Use the $\backslash$thanks command to put information here}\\
+%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
+%         University of Twente\\
+%         7500 AE Enschede, The Netherlands\\
+%         {\tt\small h.kwakernaak@autsubmit.com}}
+%         \hspace*{ 0.5 in}
+%         \parbox{3 in}{ \centering Pradeep Misra**
+%         \thanks{**The footnote marks may be inserted manually}\\
+%         Department of Electrical Engineering \\
+%         Wright State University\\
+%         Dayton, OH 45435, USA\\
+%         {\tt\small pmisra@cs.wright.edu}}
+% %}
+
+\centering \author{ Paula Navarrete Campos \& Astrid San Martín\\
+        Department of Computer Science\\
+        School of Engineering\\
+        Pontifical Catholic University\\
+        {\tt\small pcnavarr@uc.cl, aesanmar@uc.cl}}
+
+\noaffiliation
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\justify
+In this work we ...
+
+La primera entrega del proyecto del curso consiste en una propuesta escrita del proyecto que se piensa realizar como grupo. El documento escrito, de 2 o 3 páginas.
+
+\section{Contexto del problema}
+
+\section{Problema y su justiﬁcación}
+
+\section{Objetivos}
+
+\section{Solución propuesta}
+
+\section{Descripción de experimentos}
+descripción de experimentos a realizar (datos, métodos, evaluación y otros),
+
+
+
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} Schafer, J. B., Frankowski, D., Herlocker, J., & Sen, S. (2007). Collaborative filtering recommender systems. In The adaptive web (pp. 291-324). Springer Berlin Heidelberg.
+
+\bibitem{c2} How not to sort by Average Rating, Evan Miller Blog
+
+\bibitem{c3} Koren, Y., Bell, R., & Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer IEEE Magazine, 42(8), 30–37.
+
+\bibitem{c4} Hu, Y., Koren, Y., & Volinsky, C. (2008, December). Collaborative filtering for implicit feedback datasets. In Data Mining, 2008. ICDM’08. Eighth IEEE International Conference on (pp. 263–272). IEEE.
+
+
+\bibitem{c5} L. Van der Maaten and G. Hinton. Visualizing data using t-sne. Journal of Machine Learning Research, 9(2579-2605):85, 2008.
+
+\bibitem{c6} Sanjay Y. and Sanyam S. Analysis of k-Fold Cross-Validation over Hold-Out Validation on Colossal Datasets for Quality Classification. IEEE 6th International Conference on Advanced Computing (IACC), 2016.
+
+\bibitem{c7} Jingjiao L., Limei S. and Jiao W. A Slope One Collaborative Filtering Recommendation Algorithm Using Uncertain Neighbors Optimizing. Lecture Notes in Computer Science book series, volume 7142, pp 160-166, 2011.
+
+
+
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
